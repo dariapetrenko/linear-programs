@@ -12,16 +12,20 @@ int main()
     double x3 = -1.0;
     double y3 = 2.0;
 
-    //Формула Герона
+    //Р¤РѕСЂРјСѓР»Р° Р“РµСЂРѕРЅР°
     double a = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
     double b = sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
     double c = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 
-    double p = (a + b + c) / 2.0; // периметр 
-    double square = sqrt(p * (p - a) * (p - b) * (p - c)); // площа 
+    double p = (a + b + c) / 2.0; //РїРµСЂРёРјРµС‚СЂ
+    double square = sqrt(p * (p - a) * (p - b) * (p - c)); //РїР»РѕС‰Р° 
 
-    double h = square / 0.5; // висота 
-    cout << h;
+    double h = square / 0.5; //РІРёСЃРѕС‚Р° 
+    cout<< "Р’РёСЃРѕС‚Р°: "<< h << endl; 
+    
+    //Р±С–СЃРµРєС‚СЂРёСЃР°
+    double bis = sqrt(a*b*(a+b+c)*(a+b-c))/(a+b);
+    cout<<"Р‘С–СЃРµРєС‚СЂРёСЃР°: "<<bis;
 
     return 0;
 }
