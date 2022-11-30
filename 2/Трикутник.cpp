@@ -1,3 +1,5 @@
+/* 1 варіант */
+
 #include <iostream>;
 #include <cmath>;
 
